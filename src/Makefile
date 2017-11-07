@@ -3,6 +3,7 @@ include ../config.mak
 vpath %.c $(SRC_PATH)/src
 
 CFLAGS= $(OPTFLAGS) -I"$(SRC_PATH)/include"
+LDFLAGS= -lcurl
 
 ifeq ($(DEBUGBUILD), yes)
 CFLAGS+=-g
